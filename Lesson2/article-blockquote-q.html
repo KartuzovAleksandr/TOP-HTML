@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Article, blockquote, cite</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.4;
+        }
+        article {
+            width: 70%;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        <header>
+            <h1>HTML (Hypertext Markup Language)</h1>
+        </header>
+        <p>HTML (Hypertext Markup Language) is the set of markup symbols or codes inserted in a file intended for display on a World Wide Web browser page. The markup tells the Web browser how to display a Web page's words and images for the user. Each individual markup code is referred to as an element (but many people also refer to it as a tag). Some elements come in pairs that indicate when some display effect is to begin and when it is to end.</p>
+        <p>Tim Berners-Lee is a British computer scientist who created technology named HTML to view web pages (hypertext documents) through the internet. He also serves as a director for the World Wide Web Consortium (W3C) which oversees standards for the Internet and World Wide Web.</p>
+        <p>Tim also wrote the first web page editor/browser (“WorldWideWeb.app”) and the first web server (“httpd“). By the end of 1990, the first web page was served on the open internet, and in 1991, people outside of CERN were invited to join this new web community.</p>
+        <p>As the web began to grow, Tim realised that its true potential would only be unleashed if anyone, anywhere could use it without paying a fee or having to ask for permission.</p>
+
+        <p>He explains: <q>Had the technology been proprietary, and in my total control, it would probably not have taken off. You can’t propose that something be a universal space and at the same time keep control of it.</q>
+        </p>
+
+        <p>HTML is a formal Recommendation by the World Wide Web Consortium (W3C) and is generally adhered to by the major browsers, Microsoft's Internet Explorer and Netscape's Navigator, which also provide some additional non-standard codes. The current version of HTML is HTML 4.0. However, both Internet Explorer and Netscape implement some features differently and provide non-standard extensions. Web developers using the more advanced features of HTML 4 may have to design pages for both browsers and send out the appropriate version to a user. Significant features in HTML 4 are sometimes described in general as dynamic HTML. What is sometimes referred to as HTML 5 is an extensible form of HTML called Extensible Hypertext Markup Language (XHTML).</p>
+        <blockquote cite="https://www.w3.org/People/Raggett/book4/ch02.html">
+            HTML has had a life-span of roughly seven years. During that time, it has evolved from a simple language with a small number of tags to a complex system of mark-up, enabling authors to create all-singing-and-dancing Web pages complete with animated images, sound and all manner of gimmicks.
+        </blockquote>
+        <p>HTML can embed programs written in a scripting language such as JavaScript which affect the behavior and content of web pages. Inclusion of CSS defines the look and layout of content. The World Wide Web Consortium (W3C), maintainer of both the HTML and the CSS standards, has encouraged the use of CSS over explicit presentational HTML since 1997.</p>
+
+        <h2>What the DOCTYPE reveals</h2>
+
+        <p>Markup languages derived from standard generalized markup language (SGML), such as XML and all versions of HTML before HTML5, embrace the role of DOCTYPE declarations to associate a document type definition (DTD) with a document. DTDs use a compact formal syntax which defines exactly which elements can occur where in any SGML compliant language. The DOCTYPE declaration, which should be the first element of a document, guides a client program such as a browser in interpretation of the markup.</p>
+        <footer>
+            <p>
+                Information from <a href="http://searchmicroservices.techtarget.com/definition/HTML-Hypertext-Markup-Language">searchmicroservices</a>
+            </p>
+
+            <p>
+                <small>
+                  Posted on <time datetime="2017-04-29T19:00">Apr 12</time> in <a href="/category/html">HTML</a>
+                </small>
+            </p>
+
+        </footer>
+    </article>
+</body>
+
+</html>

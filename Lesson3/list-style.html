@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS property list-style</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            width: 80%;
+            margin: auto;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: rgb(0, 89, 209);
+        }
+
+        .actors {
+            list-style: url(markers/actor-icon.png);
+        }
+
+        .actress {
+            list-style: url(markers/actress-icon.png);
+            font-style: italic;
+            color: #657;
+        }
+        .comedy {
+            list-style: upper-latin inside;
+        }
+
+        .all {
+            list-style: disc inside url(markers/arr.gif);
+        }
+
+    </style>
+</head>
+
+<body>
+    <h2>Список актеров в фильме "Лучшее предложение" (2013)</h2>
+    <ol class="actors">
+        <li>Джеффри Раш — Вирджил Олдман — главная роль</li>
+        <li>Джим Стёрджесс — Роберт — главная роль</li>
+        <li class="actress">Сильвия Хукс — Клара — главная роль</li>
+        <li>Дональд Сазерленд — Билли</li>
+        <li>Филип Джексон — Фрэд</li>
+        <li>Дермот Кроули — Ламберт</li>
+        <li class="actress">Лия Кебеде — Сара</li>
+        <li>Кируна Стамелл — девушка в баре</li>
+        <li>Джон Бенфилд — бармен</li>
+        <li>Клаус Таубер — ассистент Вирджила</li>
+        <li>Максимилиан Дирр — ассистент Вирджила</li>
+        <li>Ген Сето — домоправитель</li>
+        <li class="actress">Сильвия Де Фанти — менеджер галереи</li>
+    </ol>
+    <hr>
+    <h2>Комедии 2017г.</h2>
+
+    <ol class="comedy">
+        <li>Семейное ограбление</li>
+        <li>Во всем виноват енот</li>
+        <li>Если б я была мужчиной</li>
+        <li>Не/смотря ни на что</li>
+        <li>Его собачье дело</li>
+        <li>Ой, мамочки</li>
+        <li>Доспехи бога: В поисках сокровищ</li>
+        <li>Видели ночь</li>
+        <li>Гиппопотам</li>
+        <li>Телохранитель киллера</li>
+        <li>Завуалируй это</li>
+        <li>В гостях у Элис</li>
+        <li>SuperАЛИБИ</li>
+        <li>Kingsman: Золотое кольцо</li>
+        <li>Пока не кончилось лето</li>
+        <li>Послесвадебный разгром</li>
+    </ol>
+    <hr>
+
+    <h2>Фундаментальные ценности центра</h1>
+        <ul class="all">
+            <li>Ответственность</li>
+            <li>Верность принципам</li>
+            <li>Творческий подход</li>
+            <li>Эффективность</li>
+            <li>Качество</li>
+            <li>Профессионализм</li>
+            <li>Новаторство</li>
+            <li>Командная работа</li>
+        </ul>
+</body>
+
+</html>
