@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 80%;
+            min-width: 700px;
+            max-width: 1100px;
+            margin: 0 auto;
+            border-collapse: collapse;
+            font-family: Calibri, sans-serif;
+        }
+        th,td{
+            border: 1px solid #999999;
+            padding: 0.3em 0.5em;
+            color: #333;
+        }
+        span{
+            font-size: 1.2em;
+            color:black;
+        }
+        col:first-child{
+            background-color: #ffee99;
+            width: auto;
+        }
+        col:nth-child(2){
+            background-color: #ccccff;
+            width: 26%;
+        }
+        col:nth-child(3){
+            background-color: #ffbbbb;
+            width: 26%;
+        }
+        col:nth-child(4){
+            background-color: #aaffcc;
+            width: 26%;
+        }
+        col:last-child{
+            background-color: #ffbbff;
+            width: 26%;
+        }
+        thead tr:first-child,
+        thead tr:nth-child(2) th{
+            text-transform: uppercase;
+        }
+        thead tr:nth-child(2) td{
+            font-style: italic;
+            font-weight: 200;
+            text-align: center;
+        }
+        tbody tr td{
+            text-align: center;
+        }
+        tbody tr:nth-child(4n+1) td{
+            font-size: 0.8em;
+            font-style: italic;
+            text-align: left;
+        }
+        tbody tr:nth-child(4n+1) td:first-child{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col span="2">
+            <col>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <thead>
+            <tr>
+                <th colspan="2">aspect</th>
+                <th>simple</th>
+                <th>progressive</th>
+                <th>perfect</th>
+                <th>perfect progressive</th>
+            </tr>
+            <tr>
+                <th rowspan="2"  colspan="2">meaning</th>
+                <td>a common aspect</td>
+                <td>a process</td>
+                <td>priority</td>
+                <td>priority + process</td>
+            </tr>
+            <tr>
+                <th>When?</th>
+                <th>At what time?</th>
+                <th>By what time?</th>
+                <th>Since what time? How long?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2">Period of time</td>
+                <td>usually, often, always, seldom, every day (week, month, year)</td>
+                <td>now, at the moment</td>
+                <td>ever, never, just, already, not..yet, by 3 p.m.</td>
+                <td>since 3 p.m., for a long time, for a month</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Present</td>
+                <th>+</th>
+                <td><span>V</span>/<span>V</span>s</td>
+                <td>am/is/are + <span>V</span>ing</td>
+                <td>have/has + <span>V</span>ed/<span>V</span><sub>3</sub></td>
+                <td>have/has + been + <span>V</span>ing</td>
+            </tr>
+            <tr>
+                <th>?</th>
+                <td>do/does + <span>V</span></td>
+                <td>inversion</td>
+                <td>inversion</td>
+                <td>inversion</td>
+            </tr>
+            <tr>
+                <th>-</th>
+                <td>do/does + not + <span>V</span></td>
+                <td>am/is/are + not + <span>V</span>ing</td>
+                <td>have/has + not + <span>V</span>ed/<span>V</span><sub>3</sub></td>
+                <td>have/has + not + been + <span>V</span>ing</td>
+            </tr>
+            <tr>
+                <td colspan="2">Period of time</td>
+                <td>yesterday, last week (month, year), long ago</td>
+                <td>yesterday at 3p.m., yesterday from 6 till 7, when you came</td>
+                <td>yesterday by 3p.m., before some time in the past</td>
+                <td>yesterday since 3p.m., for some time in the past</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Past</td>
+                <th>+</th>
+                <td><span>V</span>ed/<span>V</span><sub>2</sub></td>
+                <td>was/were + <span>V</span>ing</td>
+                <td>had + <span>V</span>ed/<span>V</span><sub>3</sub></td>
+                <td>had + been + <span>V</span>ing</td>
+            </tr>
+            <tr>
+                <th>?</th>
+                <td>did + <span>V</span></td>
+                <td>inversion</td>
+                <td>inversion</td>
+                <td>inversion</td>
+            </tr>
+            <tr>
+                <th>-</th>
+                <td>did + not + <span>V</span></td>
+                <td>was/were + not + <span>V</span>ing</td>
+                <td>had + not + <span>V</span>ed/<span>V</span><sub>3</sub></td>
+                <td>had + not + been + <span>V</span>ing</td>
+            </tr>
+            <tr>
+                <td colspan="2">Period of time</td>
+                <td>tomorrow, next week (month, year)</td>
+                <td>tomorrow at 3p.m., tomorrow from 6 till 7, when you come</td>
+                <td>tomorrow by 3p.m., before some time in the future</td>
+                <td>tomorrow since 3p.m., for some time in the future</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Future</td>
+                <th>+</th>
+                <td>will + <span>V</span></td>
+                <td>will + be + <span>V</span>ing</td>
+                <td>will + have + <span>V</span>ed/<span>V</span><sub>3</sub></td>
+                <td>will + have + been + <span>V</span>ing</td>
+            </tr>
+            <tr>
+
+                <th>?</th>
+                <td>inversion</td>
+                <td>inversion</td>
+                <td>inversion</td>
+                <td>inversion</td>
+            </tr>
+            <tr>
+                <th>-</th>
+                <td>won't + <span>V</span></td>
+                <td>won't + be + <span>V</span>ing</td>
+                <td>won't + have + <span>V</span>ed/<span>V</span><sub>3</sub></td>
+                <td>won't + have + been + <span>V</span>ing</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
