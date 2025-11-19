@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<title>Падающие снежинки</title>
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    background-color: #001f3f;
+    overflow: hidden;
+  }
+  .snowflake {
+    position: fixed;
+    top: -10px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    pointer-events: none;
+    animation-name: fall;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  @keyframes fall {
+    to {
+      transform: translateY(100vh);
+    }
+  }
+</style>
+</head>
+<body>
+
+<script>
+  const snowflakeCount = 50;
+
+  function random(min, max) {
+    return Math.random() * (max - min) + min;
+  }
+
+  for (let i = 0; i < snowflakeCount; i++) {
+    const snowflake = document.createElement('div');
+    snowflake.classList.add('snowflake');
+
+    const size = random(5, 15);
+    snowflake.style.width = size + 'px';
+    snowflake.style.height = size + 'px';
+
+    snowflake.style.left = random(0, window.innerWidth) + 'px';
+
+    snowflake.style.animationDuration = random(5, 15) + 's';
+    snowflake.style.animationDelay = random(0, 15) + 's';
+
+    document.body.appendChild(snowflake);
+  }
+</script>
+
+</body>
+</html>
