@@ -4,14 +4,15 @@
   <head>
     <meta charset="utf-8" />
     <title>Send message to us</title>
+    <link rel="stylesheet" href="styles_m.css" />
   </head>
 
   <body>
     <h3>We need your opinion!</h3>
-    <form action="/search" method="POST">
-      <div>
+    <form>
+      <div class="mat-input">
         <label for="uname">Name:</label>
-        <input type="text" id="uname" name="userName" />
+        <input type="text" id="uname" name="userName" placeholder="Имя" />
       </div>
       <div>
         <label for="email">Email:</label>
@@ -22,7 +23,7 @@
         <textarea id="message" name="userMessage"></textarea>
       </div>
       <div>
-        <input type="submit" value="Send my message" />
+        <button type="submit">Send my message</button>
       </div>
     </form>
   </body>
