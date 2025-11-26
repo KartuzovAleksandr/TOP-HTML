@@ -199,7 +199,7 @@ footer{
 }
 
 /*запрос для экранов с максимальной шириной 960px и меньше*/
-@media screen and (max-width:960px){
+@media screen and (max-width:1080px){
     main>section+aside{
         /*спрячем правый элемент на всех устройствах, с шириной 960px и меньше*/
         display: none;
@@ -215,7 +215,7 @@ footer{
 }
 
 /*запрос для экранов с максимальной шириной 570px и меньше*/
-@media screen and (max-width:570px){
+@media screen and (max-width:720px){
     header{
         flex-basis: auto;
          /*меняем направление основной оси шапки сайта*/
@@ -239,4 +239,3 @@ footer{
         order:-1;
     }
 }
-
