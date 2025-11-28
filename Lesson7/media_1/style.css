@@ -46,7 +46,7 @@ main>section{
 }
 main>section+aside{
     background-color: lime;
-    /*зададим размер левой части по основной оси в процентах*/
+    /*зададим размер правой части по основной оси в процентах*/
     flex-basis: 20%;
 }
 footer{
