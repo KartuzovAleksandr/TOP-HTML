@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+    </head>
+    <body>
+        <button popovertarget="my-popover" popovertargetaction="show">
+    Показать поповер
+  </button>
+
+  <div id="my-popover" popover>
+    <button popovertarget="my-popover" popovertargetaction="hide">
+      <span aria-hidden="true">❌</span>
+      <span class="sr-only">Закрыть</span>
+    </button>
+
+    <p>Я — поповер, который нельзя закрыть той же кнопкой</p>
+  </div>
+    </body>
+</html>
