@@ -43,11 +43,30 @@
             list-style-type: armenian;
             color: #580079;
         }
+        .cyrilic {
+              list-style-type: none; /* скрываем стандартную нумерацию */
+              padding-left: 1em; /* отступ слева для букв */
+        }
+        .cyrilic li::before {
+              display: inline-block;
+              width: 1em;
+              margin-right: 0.5em;
+              text-align: right;
+        }
+        .cyrilic li:nth-child(1)::before { content: 'а)'; }
+        .cyrilic li:nth-child(2)::before { content: 'б)'; }
+        .cyrilic li:nth-child(3)::before { content: 'в)'; }
+        /* добавляйте по необходимости остальные буквы */
     </style>
 </head>
 
 <body>
     <h1>Результат проекта</h1>
+    <ol class="cyrilic">
+        <li>купить капусту</li>
+        <li>порезать лук</li>
+        <li>заправить щи</li>
+    </ol>
     <code>list-style-type: decimal-leading-zero;</code>
     <ol class="leading-zero">
         <li>Работающая новая стратегия, новые идеи, новые продукты</li>
