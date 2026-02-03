@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Диалоги</title>
+    </head>
+    <body>
+        <form method="get">
+            <p>
+            <input type="file" name="file">
+            <p>
+            <input type="image" name="image" src="#" alt="Выбор изображения">
+            <p>
+            <label>Выбор цвета</label>
+            <input type="color" name="color">
+        </form>
+        <p id="out">Ожидание координат...</p>
+
+<!-- Элемент сам запросит данные при загрузке (если разрешено) -->
+<geolocation autolocate onlocation="
+    const {latitude: lat, longitude: lon} = event.target.position.coords;
+    document.getElementById('out').innerText = `${lat}, ${lon}`;
+"></geolocation>
+
+    </body>
+</html>
