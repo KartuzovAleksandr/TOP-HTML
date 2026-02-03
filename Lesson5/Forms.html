@@ -3,23 +3,42 @@
     <head>
         <meta charset="UTF-8" />
         <title>Формы 2026</title>
+        <style>
+            input:invalid {
+                border: 2px solid red;
+            }
+            input:valid {
+                border: 2px solid green;
+            }
+            input:focus:invalid {
+                outline: none;
+            }
+        </style>
     </head>
     <body>
         <form method="get">
             <label>Введите имя</label>
-            <input type="text" name="username" placeholder="Логин">
+            <input type="text" required name="username" placeholder="Логин" pattern="[A-Za-z]*">
             <p>
             <label>Пароль</label>
-            <input type="password" name="password" placeholder="Пароль">
+            <input type="password" name="password" placeholder="Пароль" minlength="8">
             <p>
             <label>Email</label>
             <input type="email" name="email" placeholder="Почта">
             <p>
-            <label>Возраст</label>
+            <label for="age">Возраст</label>
             <input type="number" min="18" max="80" step="5" name="age">
             <p>
             <label>Телефон</label>
             <input type="tel" name="phone" placeholder="">
+            <p>
+            <label>Страна</label>
+            <input type="text" name="country" list="countries">
+            <datalist id="countries">
+                <option>Россия</option>
+                <option>США</option>
+                <option>Европа</option>
+            </datalist>
             <p>
             <label>Сайт</label>
             <input type="url" name="site" placeholder="http://">
