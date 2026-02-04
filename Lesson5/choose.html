@@ -19,7 +19,7 @@
 <!-- Элемент сам запросит данные при загрузке (если разрешено) -->
 <geolocation autolocate onlocation="
     const {latitude: lat, longitude: lon} = event.target.position.coords;
-    document.getElementById('out').innerText = `${lat}, ${lon}`;
+    document.getElementById('out').innerText = `Широта ${lat.toFixed(2)} Долгота ${lon.toFixed(2)}`;
 "></geolocation>
 
     </body>
