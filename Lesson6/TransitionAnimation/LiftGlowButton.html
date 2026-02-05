@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>LiftGlowButton</title>
+        <style>
+            .btn {
+                background-color: green;
+            }
+            .btn:hover{
+                background-color: greenyellow;
+                transition-duration: 0.5s;
+                transform: translateY(-5px);
+                box-shadow: 5px 5px 5px;
+            }
+            .btn1
+            {
+                width: 150px;
+                height: 50px;
+                background-color: blue;
+                color:red
+            }
+            .btn1:hover
+            {
+                background-color: darkblue;
+                transition: all 1s;
+                transform:  translateX(-3px);
+                box-shadow: 5px 5px 5px
+            }
+            .btn2{
+                background-color: aquamarine;
+                margin-left: 20%;
+                margin-top: 20%;
+            }
+            .btn2:hover{
+                background-color: #1bffb2;
+                box-shadow: 5px 5px 5px;
+                transform: scale(2);
+                transition: all 3s;
+            }
+            .box {
+                height: 200px;
+                width: 200px;
+                background-color: whitesmoke;
+                transition:all 1s ease-in-out;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .box:hover {
+                height: 400px;
+                width: 400px;
+                background-color: palevioletred;
+            }
+       </style>
+    </head>
+    <body>
+        <button class="btn">Нажми меня</button>
+        <p>
+        <button class="btn1">Я тоже хочу</button>
+        <p>
+        <button class="btn2">Press me</button>
+        <p>
+        <div class="box">Наведись на меня</div>
+    </body>
+</html>

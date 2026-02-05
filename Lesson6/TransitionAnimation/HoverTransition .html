@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Изменение масштаба и цвета при наведении</title>
+    <style>
+        .box {
+            width: 100px; height: 100px;
+            background: blue;
+            transition: scale 0.3s ease, background-color 0.5s ease;
+        }
+        .box:hover {
+            scale: 1.2;
+            background-color: red;
+        }
+    </style>
+    </head>
+    <body>
+       <div class="box"></div> 
+    </body>
+</html>
