@@ -103,15 +103,18 @@ input[type="range"]::-moz-range-thumb {
     </div>
     <div>
     <input type="range" min="0" max="10" step="2" value="6">
+    <br>
+    Поиск
     <input name="q" type="search">
     </div>
 
-    <!-- Элемент сам запросит данные при загрузке (если разрешено) -->
-<geolocation autolocate onlocation="
-    const {latitude: lat, longitude: lon} = event.target.position.coords;
-    document.getElementById('out').innerText = `Широта ${lat.toFixed(2)} Долгота ${lon.toFixed(2)}`;
-"></geolocation>
-
+    <p>
+    <div id="out">Широта ? Долгота ?</div>
+    <p>
+    <!-- Элемент сам запросит данные при загрузке, если разрешите - кликните -->
+    <geolocation autolocate onlocation="
+        const {latitude: lat, longitude: lon} = event.target.position.coords;
+        document.getElementById('out').innerText = `Широта ${lat.toFixed(2)} Долгота ${lon.toFixed(2)}`;">
+    </geolocation>
 </body>
-
 </html>

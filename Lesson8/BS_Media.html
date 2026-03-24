@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Media</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            .header {
+                background-color: pink;
+                height: 10vh;
+            }
+            .aside-left {
+                background-color: cyan;
+            }
+            .section {
+                background-color: coral;
+            }
+            .aside-right {
+                background-color: lime;
+            }
+            .footer {
+                background-color: gray;
+                height: 5vh;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid flex-column d-flex p-0">
+            <header class="header text-center">Заголовок</header>
+            <main class="d-flex flex-column flex-sm-row flex-md-row p-0">
+                <section class="flex-fill section flex-sm-grow-0 flex-md-grow-0 order-sm-1 order-md-0 d-sm-block">section center</section>
+                <aside class="flex-fill aside-left flex-sm-grow-0 flex-md-grow-0 order-sm-0 order-md-2 d-sm-block d-md-none">aside left</aside>
+                <aside class="flex-fill aside-right d-none d-md-block order-md-1">aside right</aside>
+            </main>
+            <footer class="footer">footer bottom</footer>
+        </div>
+    </body>
+</html>
